@@ -39,11 +39,14 @@ namespace Mine.Views
             {
                 switch (id)
                 {
-                    case (int)MenuItemEnum.Items:
-                        MenuPages.Add(id, new NavigationPage(new ItemIndexPage()));
-                        break;
                     case (int)MenuItemEnum.About:
                         MenuPages.Add(id, new NavigationPage(new AboutPage()));
+                        break;
+                    case (int)MenuItemEnum.Game:
+                        MenuPages.Add(id, new NavigationPage(new GamePage()));
+                        break;
+                    case (int)MenuItemEnum.Items:
+                        MenuPages.Add(id, new NavigationPage(new ItemIndexPage()));
                         break;
                 }
             }
