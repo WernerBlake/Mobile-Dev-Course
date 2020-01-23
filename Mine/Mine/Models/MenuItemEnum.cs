@@ -5,7 +5,7 @@
     /// </summary>
     public enum MenuItemEnum
     {
-        Browse,
+        Items,
         About
     }
 }
