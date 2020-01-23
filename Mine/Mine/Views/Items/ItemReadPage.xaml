@@ -17,6 +17,8 @@
         <Label Text="{Binding Data.Name}" FontSize="Small"/>
         <Label Text="Description:" FontSize="Medium" />
         <Label Text="{Binding Data.Description}" FontSize="Small"/>
+        <Label Text="Value:" FontSize="Medium"/>
+        <Label Text="{Binding Data.Value}" FontSize="Small"/>
     </StackLayout>
     
 </ContentPage>
