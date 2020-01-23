@@ -30,8 +30,8 @@ namespace Mine.Views
             // Establish the Menu List
             menuItems = new List<HomeMenuItemModel>
             {
-                new HomeMenuItemModel {Id = MenuItemEnum.Items, Title="Items" },
-                new HomeMenuItemModel {Id = MenuItemEnum.About, Title="About" }
+                new HomeMenuItemModel {Id = MenuItemEnum.About, Title="About" },
+                new HomeMenuItemModel {Id = MenuItemEnum.Items, Title="Items" }
             };
 
             // Register the ListView for the Menu and the Item Selected call back
