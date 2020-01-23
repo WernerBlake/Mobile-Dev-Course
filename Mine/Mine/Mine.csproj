@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.4.0.991265" />  
+    <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\Items\ItemDeletePage.xaml.cs">
+      <DependentUpon>ItemDeletePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Items\ItemUpdatePage.xaml.cs">
+      <DependentUpon>ItemUpdatePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Items\ItemCreatePage.xaml.cs">
+      <DependentUpon>ItemCreatePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Items\ItemReadPage.xaml.cs">
+      <DependentUpon>ItemReadPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Items\ItemIndexPage.xaml.cs">
+      <DependentUpon>ItemIndexPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>
