@@ -19,7 +19,12 @@
             <Label Text="Description" FontSize="Medium" />
             <Editor Text="{Binding Data.Description}" d:Text="Item description" FontSize="Small" Margin="0" />
             <Label Text="Value" FontSize="Medium"/>
-            <Editor Text="{Binding Data.Value}" d:Text="Item Value" FontSize="Small" Margin="0"/>
+            <Stepper
+                Value="{Binding Data.FallbackValue, Mode=TwoWay}"
+                Minimum="0"
+                Maximum="10"
+                Increment="1"
+            />
         </StackLayout>
     </ContentPage.Content>
 
