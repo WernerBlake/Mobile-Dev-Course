@@ -14,17 +14,31 @@
 
     <ContentPage.Content>
         <StackLayout Spacing="20" Padding="15">
+            
             <Label Text="Text" FontSize="Medium" />
             <Entry Text="{Binding Data.Name}" d:Text="Item name" FontSize="Small" />
+            
             <Label Text="Description" FontSize="Medium" />
             <Editor Text="{Binding Data.Description}" d:Text="Item description" FontSize="Small" Margin="0" />
+           
             <Label Text="Value" FontSize="Medium"/>
-            <Stepper
-                Value="{Binding Data.FallbackValue, Mode=TwoWay}"
-                Minimum="0"
-                Maximum="10"
-                Increment="1"
-            />
+            
+            <StackLayout
+                Orientation="Horizontal">
+                
+                <Stepper
+                    Value="{Binding Data.Value, Mode=TwoWay}"
+                    Minimum="0"
+                    Maximum="10"
+                    ValueChanged="Value_OnStepperValueChanged"
+                    Increment="1"/>
+                
+                <Label
+                    x:Name="ValueValue"
+                    Text="{Binding Data.Value}"
+                    FontSize="Medium"/>
+            </StackLayout>
+            
         </StackLayout>
     </ContentPage.Content>
 

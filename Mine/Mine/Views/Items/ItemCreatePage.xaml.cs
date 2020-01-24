@@ -50,5 +50,10 @@ namespace Mine.Views
         {
             await Navigation.PopModalAsync();
         }
+
+        void Value_OnStepperValueChanged(object senders, ValueChangedEventArgs e)
+        {
+            ValueValue.Text = String.Format("{0}", e.NewValue);
+        }
     }
 }
