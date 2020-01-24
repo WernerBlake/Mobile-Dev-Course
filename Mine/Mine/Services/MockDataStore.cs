@@ -30,12 +30,11 @@ namespace Mine.Services
         {
             datalist = new List<ItemModel>()
             {
-                new ItemModel { Name = "First item", Description="This is an item description." },
-                new ItemModel { Name = "Second item", Description="This is an item description." },
-                new ItemModel { Name = "Third item", Description="This is an item description." },
-                new ItemModel { Name = "Fourth item", Description="This is an item description." },
-                new ItemModel { Name = "Fifth item", Description="This is an item description." },
-                new ItemModel { Name = "Sixth item", Description="This is an item description." }
+                new ItemModel { Name = "Pool Noodle", Description="Flimsey foam tube. Not very good at keeping you buoyant or dealing damage.", Value=3 },
+                new ItemModel { Name = "Water Wings", Description="Inflatable tubes that keep your arms afloat. Pretty restrictive gear.", Value=2 },
+                new ItemModel { Name = "Snorkle", Description="Hook shaped tube to help you breath while slightly underwater", Value=2 },
+                new ItemModel { Name = "Goggles", Description="Plastic eye protection. Looked cooler in the ad", Value=3 },
+                new ItemModel { Name = "Sun Tan Lotion Spray", Description="SPF 1000 protects from more than just the sun", Value=4 },
             };
 
             return true;
