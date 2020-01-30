@@ -61,6 +61,17 @@ namespace Mine.ViewModels
             return true;
         }
 
+        /// <summary>
+        /// API to add the Data
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        public async Task<bool> Read(String id)
+        {
+            var result = await DataStore.ReadAsync(id);
+            return true;
+        }
+
         #region Refresh
         // Return True if a refresh is needed
         // It sets the refresh flag to false
