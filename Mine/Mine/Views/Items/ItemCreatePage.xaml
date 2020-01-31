@@ -19,12 +19,13 @@
             <Entry Text="{Binding Data.Name}" d:Text="Item name" FontSize="Small" />
             
             <Label Text="Description" FontSize="Medium" />
-            <Editor Text="{Binding Data.Description}" d:Text="Item description" FontSize="Small" Margin="0" />
+            <Editor Text="{Binding Data.Description}" d:Text="Item description" FontSize="Small" Margin="0" AutoSize="TextChanges"/>
            
             <Label Text="Value" FontSize="Medium"/>
             
             <StackLayout
-                Orientation="Horizontal">
+                Orientation="Horizontal"
+                >
                 
                 <Stepper
                     Value="{Binding Data.Value, Mode=TwoWay}"
@@ -37,6 +38,8 @@
                     x:Name="ValueValue"
                     Text="{Binding Data.Value}"
                     FontSize="Medium"/>
+
+
             </StackLayout>
             
         </StackLayout>
